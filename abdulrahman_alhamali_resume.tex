@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/abdulrahman-alhamali-b9578378/}{\Large Abdulrahman Alhamali}} & Email : \href{mailto:a.alhamali93@gmail.com}{a.alhamali93@gmail.com}\\
+  \href{https://www.linkedin.com/in/abdulrahman-alhamali-b9578378/}{https://www.linkedin.com/in/abdulrahman-alhamali-b9578378/} & Mobile : +1-514-550-54-84 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {American University of Beirut}{Beirut, Lebanon}
+      {Bachelor of Computer and Communications Engineering;  GPA: 89.06\%}{Feb. 2012 -- Jan. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Development Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coveo}{Montréal, Québec}
+      {DevOps Tooling Software Engineer}{Jan 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Spinnaker Migration}
+          {Initiated and implemented a project to migrate development teams from a centralized Jenkins-based deployment pipeline to a per-team Spinnaker-based pipeline with minimum interruption. In executing the project, I had to contribute significant changes to Open Source Spinnaker to make it fit our needs. }
+        \resumeItem{Automated Deployment Monitoring}
+          {Initiated, researched and implemented a system to automatically monitor health metrics of micro-services while deploying, and rollback automatically if any degradation was noticed}
+        \resumeItem{Config Migration Script}
+          {Moved our deployment pipeline from version-based to evergreen by implementing a workflow that included standardized deprecation and automated migration procedures}
+        \resumeItem{Miscellaneous} 
+          {Creating internal documentation, providing support for users, collecting requirements, supervising interns, and organizing a recurring "DevOps Meetup" conference}
+      \resumeItemListEnd
+      
+% % --------Multiple Positions Heading------------
+% %    \resumeSubSubheading
+% %     {Software Engineer I}{Oct 2014 - Sep 2016}
+% %     \resumeItemListStart
+% %        \resumeItem{Apache Beam}
+% %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+% %     \resumeItemListEnd
+% %    \resumeSubHeadingListEnd
+% %-------------------------------------------
+
+    \resumeSubheading
+      {SAUGO360}{Beirut, Lebanon}
+      {Software Engineer}{Jan 2016 - Jan 2019}
+      \resumeItemListStart
+        \resumeItem{SAUGO360 Golden Config Manager}
+          {Worked on a web portal in Angular and NestJS for SAUGO360 GCM, a platform built on top of NSO (Network Services Orchestrator).}
+        \resumeItem{SAUGO360 OpenDaylight Controller}
+          {Worked on an Angular-based web portal for SAUGO360 ODL Controller, a collection of networking features built on top of OpenDaylight.}
+        \resumeItem{Momday}
+          {Worked on a Flutter-based Mobile app for the e-commerce platform Momday.}
+        \resumeItem{Miscellaneous}
+          {Supervised multiple internship programs, studied feasability and requirments of several projects, and worked on the CI/CD of the products.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OpenDayLight TSDR Project}{Remote Volunteering}
+      {Testing Engineer}{Jun 2016 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Automated Tests}
+          {Developed and maintained automated tests for the TSDR Project using Robot Framework and Jenkins.}
+        \resumeItem{TSDR RESTCONF Collector}
+          {Developed a collector that collects RESTCONF requests received by ODL and persists them in the TSDR database.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dar Al-Handasah}{Beirut, Lebanon}
+      {Freelance Software Developer}{Summer 2015}
+      \resumeItemListStart
+        \resumeItem{Urban Street Design Tool (USDM)}
+          {Used Java and GWT to design and implement a geometric algorithm that calculates intersections between circles, and implemented user-behavior tracking using Google Analytics.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Other Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {American University of Beirurt}{Beirut, Lebanon}
+      {Research Assistant - Lab Assistant - Freelance Tutor}{Feb 2012 - Jan 2016}
+    
+    \resumeSubheading
+      {ToastMasters Lebanon}{Beirut, Lebanon}
+      {Convention Chair - Secretary - Club Vice President} {2013 - 2015}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/AbdulRahmanAlHamali/flutter_typeahead}{Flutter Typeahead}}
+      {Open source Flutter widget to show users suggestions as they type.}
+    \resumeSubItem{\href{https://github.com/AbdulRahmanAlHamali/flutter_pagewise}{Flutter Pagewise}}
+      {Open source Flutter widget that loads its content one page at a time.}
+  \resumeSubHeadingListEnd
+
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages and Frameworks}{: JavaScript, TypeScript, PHP, Dart, Java, C++, Python, SQL, HCL, Angular, Flutter, Django, NodeJS}
+     \hfill
+   }
+   \item{
+    \textbf{Tools}{: AWS, Terraform, Kubernetes, Jenkins, Spinnaker, Prometheus}
+    \hfill
+   }
+ \resumeSubHeadingListEnd
+ %--------LANGUAGES------------
+\section{Lanugages}
+  \begin{tabular*}{\textwidth}{c@{\extracolsep{\fill}}ll}
+    \textbf{Arabic:} Native & \textbf{English:} Fluent & \textbf{French:} Working Proficiency\\
+  \end{tabular*}
+%--------Hobbies------------
+\section{The Human Behind}
+When I'm not working, I like to blog, read novels (last one I enjoyed was ``The God of Small Things"), or study physics (currently attending a course on Special Relativity). What remains of my energy is spent on practicing Muay Thai or ice skating.
+
+\lfoot{C.V. format was adopted from the \href{https://github.com/sb2nov/resume}{Open Source LaTeX template} by Sourabh Bajaj}
+%-------------------------------------------
+\end{document}
