@@ -70,6 +70,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+% TODO: use a for loop here or something
+\newcommand{\resumeSubheadingWithPromotion}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
@@ -110,10 +120,15 @@
 %-----------EXPERIENCE-----------------
 \section{Development Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Shopify}{Ottawa, Ontario}
-      {Senior Site Reliability Engineer - Resiliency}{March 2022 - Present}
+    \resumeSubheadingWithPromotion
+      {Shopify}{Toronto, Ontario}
+      {Staff Site Reliability Engineer - Resiliency}{April 2024 - Present}
+      {Senior Site Reliability Engineer - Resiliency}{March 2022 - April 2024}
       \resumeItemListStart
+      \resumeItem{Technical Leadership}
+          {Leading several of our team's engagements and projects. Disambiguating the needs, defining the technical approach, scoping the work, and leading a "squad" within our team to get the work done.}
+      \resumeItem{Operational Leadership}
+          {Took charge during the critical phase of a migration of our deploy system, leading on-the-ground operations, developing operational manuals, streamlining communications, and collaborating with tooling teams and leadership.}
       \resumeItem{Scale Testing} 
           {Took leadership of BFCM scale testing during 2023, which involved planning, coordinating, leading, and retrospecting on 5 large-scale tests that caught several insidious issues and helped us achieve a smooth BFCM. }
         \resumeItem{Incident Management}
@@ -122,9 +137,7 @@
           {Introduced a mental framework "Resiliency Risk Repository" to help service designers understand different resiliency risks and navigate them, and leading the effort to promote this framework and develop it.}
 	\resumeItem{Introducing Novel Resiliency Measures}
 	  {Introduced and implemented Envoy's Adaptive Concurrency as a form of load shedding. This included designing our approach, rigorously testing it, and rolling it out incrementally.}
-        \resumeItem{Contributions to Core Products}
-          {Detecting various weaknesses in the core products, and collaborating with service owners to resolve them.}
-	\resumeItem{Service Ownership} 
+        \resumeItem{Service Ownership} 
           {Took ownership of a service responsible for bot defense, led the effort to scale it to process upwards of 80 Million RPM, introduced actionable SLOs, and introduced the team to a data-driven approach for evolving it. }
 	\resumeItem{Training and Mentorship}
 	  {Mentoring interns and junior members and providing personalized 1-1 troubleshooting, shadowing, and pairing sessions. In addition to identifying gaps in our training and devising novel team-wide training sessions to address them.}
